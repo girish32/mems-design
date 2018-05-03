@@ -1,32 +1,41 @@
-<nav class="navbar-default navbar-static-side" role="navigation">
-    <div class="sidebar-collapse">
-        <ul class="nav metismenu" id="side-menu">
-            <li class="nav-header">
-                <div class="dropdown profile-element">
-                    <span>
-                        <img alt="image" class="img-circle" width="80px"
-                             src="./assets/img/avatar/{{loginInfo.avatar}}" />
-                    </span>
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                      <span class="clear">
-                          <span class="block m-t-xs">
-                          <strong class="font-bold">{{loginInfo.first_name}} {{loginInfo.last_name}}</strong>
-                      </span>
-                          <span class="text-muted text-xs block">{{loginInfo.title}}</span>
-                      </span>
-                    </a>
-                </div>
-                <div class="logo-element">
-                    SWWCC
-                </div>
-            </li>
-            <li [ngClass]="{active: activeRoute('home')}">
-                <a [routerLink]="['./home']"><i class="fa fa-dashboard"></i> <span class="nav-label">Dashboards</span></a>
-            </li>
-            <li [ngClass]="{active: activeRoute('others')}">
-                <a [routerLink]="['./others']"><i class="fa fa-desktop"></i> <span class="nav-label">Others</span></a>
-            </li>
-        </ul>
+<div class="row bg-dgray">
+    <nav class="navbar-default" role="navigation">
+        <div class="flex">
+            <ul class="nav navbar-nav list-inline navList ">
+                <li [ngClass]="{active: activeRoute('home')}">
+                    <a [routerLink]="['./home']"><i class="fa fa-dashboard "></i> <span class="nav-label">Real Time Dashboard</span></a>
+                </li>
+                <!-- <li [ngClass]="{active: activeRoute('pjm')}">
+                    <a [routerLink]="['./pjm']"><i class="fa fa-desktop"></i> <span class="nav-label">PJM Market</span></a>
+                </li> -->
+                <li class="dropdown"[ngClass]="{active: activeRoute('pjm')}">
+                    <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown" [routerLink]="['./pjm']"><i class="fa fa-desktop"></i> <span class="nav-label pr-1">PJM Market</span><span class=" caret"></span></a>
+                    <ul role="menu" class="dropdown-menu">
+                        <li><a href="">Menu item</a></li>
+                        <li><a href="">Menu item</a></li>
+                        <li><a href="">Menu item</a></li>
+                        <li><a href="">Menu item</a></li>
+                    </ul>
+                </li>
+                <li [ngClass]="{active: activeRoute('market')}">
+                    <a [routerLink]="['./market']"><i class="fa fa-gear"></i> <span class="nav-label">Market Operation</span></a>
+                </li>
+                <li [ngClass]="{active: activeRoute('resourcedetails')}">
+                    <a [routerLink]="['./resourcedetails']"><i class="fa fa-desktop"></i> <span class="nav-label">Resource Details</span></a>
+                </li>
+                 <li [ngClass]="{active: activeRoute('studycasecontrol')}">
+                    <a [routerLink]="['./studycasecontrol']"><i class="fa fa-desktop"></i> <span class="nav-label">Study Case Control</span></a>
+                </li>
+                <li [ngClass]="{active: activeRoute('microgrid')}">
+                    <a [routerLink]="['./microgrid']"><i class="fa fa-desktop"></i> <span class="nav-label">Microgrid</span></a>
+                </li>
+                <li [ngClass]="{active: activeRoute('others')}">
+                    <a [routerLink]="['./others']"><i class="fa fa-desktop"></i> <span class="nav-label">Billing Portal </span></a>
+                </li>
 
-    </div>
-</nav>
+                
+            </ul>
+
+        </div>
+    </nav>
+</div>

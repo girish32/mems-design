@@ -1,16 +1,16 @@
 <div id="wrapper">
-  <navigation [loginInfo]="loginInfo" *ngIf="loginInfo"></navigation>
+  
 
-  <div id="page-wrapper" class="gray-bg">
-
+  <div class="gray-bg">
+    
     <topnavbar></topnavbar>
-
+    <navigation></navigation>
     <router-outlet></router-outlet>
 
-    <div class="footer">
+   <!--  <div class="footer">
       <div>
         <strong>Copyright</strong> Andrew &copy; 2017
       </div>
-    </div>
+    </div> -->
   </div>
 </div>

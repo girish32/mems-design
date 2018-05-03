@@ -1,13 +1,6 @@
-# Admin panel and UI Components for Angular.
+# MEMS New Design.
 
-Start your own Angular project with ng-dashboard in minutes!
-
-## Demo
-
-<a target="_blank" href="https://ddvkid.github.io/ng-dashboard"><img src="./screenshot.png" width="600" alt="Sky Blue"/></a>
-
-<a target="_blank" href="https://ddvkid.github.io/ng-dashboard">Live Demo</a>
-
+created new bright theme for MEMS Application 
 ## How to start
 
 You will need to clone the source code of ng-dashboard GitHub repository.
